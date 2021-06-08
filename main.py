@@ -47,8 +47,6 @@ while True:
             # We want the minimum squared difference
             mn, _, mnLoc, _ = cv2.minMaxLoc(result)
             if mn < 0.001:
-                #print(mn, filename)
-                #player = filename.strip('.png')
                 player=filename[:-4]
                 if player not in red_players:
                     red_players.append(player)
